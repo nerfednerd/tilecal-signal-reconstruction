@@ -25,7 +25,7 @@ def load_shard(path):
     y = y_flat.reshape(N, 2)      # (events, gains)
 
     # index 1 = lo-gain, which is what we use throughout
-    return X[:, 1, :], y[:, 1]
+    return X[:, 1, :], y[:, 1]  # FINDDDDD ANIMATION TensorReshape.mp4 in the animations folder
 
 
 def load_folder(folder_path):
